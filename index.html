@@ -75,17 +75,24 @@
 			background-color: #444;
 		}
 		
+		.logo-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			background-color: #444;
+			padding: 20px;
+		}
+		
 		.logo {
-			position: absolute;
-			top: 200px;
-			left: 20px;
-			height: 100px;
-			width: 100px;
+			height: 200px;
+			width: 200px;
 			background-color: #2c2c2c;
 			border: 2px solid #444;
 			color: #fff;
 			text-align: center;
-			font-size: 24px;
+			font-size: 48px;
 			font-weight: bold;
 			cursor: pointer;
 			transition: transform 0.3s;
@@ -104,7 +111,7 @@
 			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		}
 		
-		.logo img {
+			.logo img {
 			height: 100%;
 			width: 100%;
 			object-fit: contain;
@@ -112,18 +119,21 @@
 			transform-style: preserve-3d;
 			transform-origin: center;
 		}
+		
 	</style>
 </head>
 <body>
 	<div class="login-signup">
-		<button>Login</button>
-		<button>Sign Up</button>
+		<button onclick="location.href='login.html'">Login</button>
+		<button onclick="location.href='signup.html'">Sign Up</button>
 	</div>
-	<div class="logo">
-		<img src="logo.png" alt="Hitome logo">
+	<div class="logo-container">
+		<div class="logo">
+			<img src="logo.png" alt="Hitome logo">
+		</div>
+		<h1>Coming soon!</h1>
+		<p>Hitome studios is coming soon!</p>
 	</div>
-	<h1>Coming soon!</h1>
-	<p>Hitome studios is coming soon!</p>
 	<div class="container"></div>
 	<div class="footer">
 		<a href="mailto:support@hitome.xyz">Email</a>

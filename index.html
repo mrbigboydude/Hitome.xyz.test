@@ -78,11 +78,22 @@
 		.logo-container {
 			display: flex;
 			flex-direction: column;
-			align-items: flex-end;
+			align-items: center;
 			margin-top: 50px;
 			margin-bottom: 20px;
 			background-color: #444;
 			padding: 20px;
+		}
+		
+		.logo-container {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			background-color: #444;
+			padding: 20px;
+			justify-content: flex-start;
 		}
 		
 		.logo {
@@ -110,7 +121,7 @@
 			transform: translateZ(20px) rotateX(5deg) rotateY(-5deg);
 			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		}
-		
+
 		.logo img {
 			height: 100%;
 			width: 100%;
@@ -119,7 +130,7 @@
 			transform-style: preserve-3d;
 			transform-origin: center;
 		}
-
+		
 	</style>
 </head>
 <body>
@@ -128,18 +139,18 @@
 		<button onclick="location.href='signup.html'">Sign Up</button>
 	</div>
 	<div class="logo-container">
-		<a href="index.html" class="logo">
+		<div class="logo">
 			<img src="logo.png" alt="Hitome logo">
-		</a>
+		</div>
 		<h1>Coming soon!</h1>
 		<p>Hitome studios is coming soon!</p>
 	</div>
 	<div class="container"></div>
 	<div class="footer">
-		<a href="mailto:support@hitome.xyz">Email</a>
-		<a href="https://twitter.com/hitomestudios">Twitter</a>
-		<a href="https://discord.gg/404pagenotfound">Discord</a>
-		<a href="https://www.youtube.com/@hitome-studios">YouTube</a>
+		<a href="mailto:support@hitome.xyz"><img src="email.png" alt="Email" height="30"></a>
+		<a href="https://twitter.com/hitomestudios"><img src="twitter.png" alt="Twitter" height="30"></a>
+		<a href="https://discord.gg/404pagenotfound"><img src="discord.png" alt="Discord" height="30"></a>
+		<a href="https://www.youtube.com/@hitome-studios"><img src="youtube.png" alt="Youtube" height="30"></a>
 		<a href="brickplanet.html"><img src="brickplanet.png" alt="BrickPlanet" height="30"></a>
 	</div>
 </body>

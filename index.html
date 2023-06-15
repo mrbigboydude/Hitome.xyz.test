@@ -14,8 +14,9 @@
 		}
 
 		h1 {
-			text-align: center;
+			text-align: left;
 			margin-top: 100px;
+			margin-left: 100px;
 			font-size: 48px;
 			font-weight: bold;
 			text-shadow: 2px 2px #000;
@@ -38,18 +39,18 @@
 			margin-top: 50px;
 			perspective: 1000px;
 		}
-
+		
 		.logo {
 			position: absolute;
 			top: 20px;
-			left: 20px;
-			height: 100px;
-			width: 100px;
+			right: 20px;
+			height: 80px;
+			width: 80px;
 			background-color: #2c2c2c;
 			border: 2px solid #444;
 			color: #fff;
 			text-align: center;
-			font-size: 24px;
+			font-size: 18px;
 			font-weight: bold;
 			cursor: pointer;
 			transition: transform 0.3s;
@@ -57,7 +58,7 @@
 			transform-origin: center;
 			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		}
-
+		
 		.logo:hover {
 			transform: translateZ(30px) rotateX(10deg) rotateY(-10deg);
 			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -67,7 +68,7 @@
 			transform: translateZ(20px) rotateX(5deg) rotateY(-5deg);
 			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 		}
-
+		
 		.logo img {
 			height: 100%;
 			width: 100%;
@@ -76,56 +77,49 @@
 			transform-style: preserve-3d;
 			transform-origin: center;
 		}
-
-		.buttons {
-			text-align: center;
+		
+		.login-container {
+			display: flex;
+			align-items: center;
 			margin-top: 20px;
+			margin-right: 20px;
 		}
-
-		.buttons button {
+		
+		.login-container a {
+			margin-left: 10px;
+			font-size: 18px;
 			color: #fff;
-			background-color: transparent;
-			border: none;
-			cursor: pointer;
-			font-size: 16px;
-			margin-right: 10px;
-			transition: color 0.3s;
+			text-decoration: none;
 		}
-
-		.buttons button:hover {
-			color: #aaa;
-		}
-
-		.divider {
-			background-color: #111;
-			height: 2px;
-			width: 100%;
-			margin-top: 10px;
-			margin-bottom: 20px;
+		
+		.login-container a:hover {
+			text-decoration: underline;
 		}
 
 	</style>
 </head>
 <body>
-	<div class="buttons">
-		<button>Sign In</button>
-		<button>Sign Up</button>
-	</div>
 	<div class="logo">
 		<img src="logo.png" alt="Hitome logo">
 	</div>
+	<div class="login-container">
+		<a href="login.html">Login</a>
+		<a href="signup.html">Signup</a>
+	</div>
+	<hr style="border:none; border-top:1px solid #ccc; margin:40px auto;">
 	<h1>Coming soon!</h1>
 	<p>Hitome studios is coming soon!</p>
-	<div class="container"></div>
-	<div style="text-align:center;">
-		<hr class="divider">
-		<ul style="list-style:none; display:inline-block;">
-			<li style="display:inline-block; margin-right:20px;"><a href="mailto:support@hitome.xyz"><img src="email.png" alt="Email" height="30"></a></li>
-			<li style="display:inline-block; margin-right:20px;"><a href="https://twitter.com/hitomestudios"><img src="twitter.png" alt="Twitter" height="30"></a></li>
-			<li style="display:inline-block; margin-right:20px;"><a href="https://discord.gg/E4XsGgkJsW"><img src="discord.png" alt="Discord" height="30"></a></li>
-			<li style="display:inline-block; margin-right:20px;"><a href="https://www.youtube.com/@hitome-studios"><img src="youtube.png" alt="YouTube" height="30"></a></li>
-			<li style="display:inline-block;"><a href="https://www.brickplanet.com/guilds/691/hitome-studios"><img src="brickplanet.png" alt="BrickPlanet" height="30"></a></li>
-		</ul>
+	<div class="container">
+	</div>
+	<div style="text-align: center;">
+	  <hr style="border:none; border-top:1px solid #ccc; margin:20px auto;">
+	  <ul style="list-style:none; display:inline-block;">
+	    <li style="display:inline-block; margin-right:20px;"><a href="mailto:support@hitome.xyz"><img src="email.png" alt="Email" height="30"></a></li>
+	    <li style="display:inline-block; margin-right:20px;"><a href="https://twitter.com/hitomestudios"><img src="twitter.png" alt="Twitter" height="30"></a></li>
+	    <li style="display:inline-block; margin-right:20px;"><a href="https://discord.gg/E4XsGgkJsW"><img src="discord.png" alt="Discord" height="30"></a></li>
+	    <li style="display:inline-block; margin-right:20px;"><a href="https://www.youtube.com/@hitome-studios"><img src="youtube.png" alt="YouTube" height="30"></a></li>
+	    <li style="display:inline-block; margin-right:20px;"><a href="https://www.brickplanet.com/guilds/691/hitome-studios"><img src="brickplanet.png" alt="Brickplanet" height="30"></a></li>
+	  </ul>
 	</div>
 </body>
 </html>
